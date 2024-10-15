@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Edison Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showAnswers() {
+            var answers = document.getElementsByClassName('answer');
+            for (var i = 0; i < answers.length; i++) {
+                answers[i].style.display = 'block';
+            }
+            return false; // Verhindert das tatsächliche Absenden des Formulars
+        }
+    </script>
+</head>
+<header>
+
+    <nav>
+        <a href="index.html">Zurück</a>
+        
+    </nav>
+</header>
+<body>
+    <div class="quiz-container">
+        <h1>Thomas Edison Quiz</h1>
+        <form onsubmit="return showAnswers();">
+            <div class="question">
+                <h3>1. Welches ist die bekannteste Erfindung von Thomas Edison?</h3>
+                <input type="radio" name="q1" value="a"> a) Telefon<br>
+                <input type="radio" name="q1" value="b"> b) Flugzeug<br>
+                <input type="radio" name="q1" value="c"> c) Glühbirne<br>
+                <input type="radio" name="q1" value="d"> d) Radio<br>
+                <p class="answer">Antwort: c) Glühbirne</p>
+            </div>
+            <div class="question">
+                <h3>2. Wie viele Patente hatte Thomas Edison?</h3>
+                <input type="radio" name="q2" value="a"> a) 500<br>
+                <input type="radio" name="q2" value="b"> b) 750<br>
+                <input type="radio" name="q2" value="c"> c) 1093<br>
+                <input type="radio" name="q2" value="d"> d) 1500<br>
+                <p class="answer">Antwort: c) 1093</p>
+            </div>
+            <div class="question">
+                <h3>3. In welchem Jahr wurde Thomas Edison geboren?</h3>
+                <input type="radio" name="q3" value="a"> a) 1827<br>
+                <input type="radio" name="q3" value="b"> b) 1847<br>
+                <input type="radio" name="q3" value="c"> c) 1867<br>
+                <input type="radio" name="q3" value="d"> d) 1887<br>
+                <p class="answer">Antwort: b) 1847</p>
+            </div>
+            <div class="question">
+                <h3>4. Welches Zitat wird Thomas Edison zugeschrieben?</h3>
+                <input type="radio" name="q4" value="a"> a) "Erfolg ist die beste Rache."<br>
+                <input type="radio" name="q4" value="b"> b) "Genie ist ein Prozent Inspiration und neunundneunzig Prozent Transpiration."<br>
+                <input type="radio" name="q4" value="c"> c) "Wissen ist Macht."<br>
+                <input type="radio" name="q4" value="d"> d) "Zeit ist Geld."<br>
+                <p class="answer">Antwort: b) "Genius is one percent inspiration and ninety-nine percent perspiration."</p>
+            </div>
+            <div class="question">
+                <h3>5. Wo wurde Thomas Edison geboren?</h3>
+                <input type="radio" name="q5" value="a"> a) New York<br>
+                <input type="radio" name="q5" value="b"> b) Boston<br>
+                <input type="radio" name="q5" value="c"> c) Milan, Ohio<br>
+                <input type="radio" name="q5" value="d"> d) Chicago<br>
+                <p class="answer">Antwort: c) Milan, Ohio</p>
+            </div>
+            <div class="question">
+                <h3>6. Welche Erfindung von Edison half bei der Entwicklung des Kinos?</h3>
+                <input type="radio" name="q6" value="a"> a) Phonograph<br>
+                <input type="radio" name="q6" value="b"> b) Kinetoskop<br>
+                <input type="radio" name="q6" value="c"> c) Telegraf<br>
+                <input type="radio" name="q6" value="d"> d) Glühbirne<br>
+                <p class="answer">Antwort: b) Kinetoskop</p>
+            </div>
+            <div class="question">
+                <h3>7. In welchem Jahr starb Thomas Edison?</h3>
+                <input type="radio" name="q7" value="a"> a) 1921<br>
+                <input type="radio" name="q7" value="b"> b) 1931<br>
+                <input type="radio" name="q7" value="c"> c) 1941<br>
+                <input type="radio" name="q7" value="d"> d) 1951<br>
+                <p class="answer">Antwort: b) 1931</p>
+            </div>
+            <div class="question">
+                <h3>8. Welche Erfindung von Edison revolutionierte die Musikindustrie?</h3>
+                <input type="radio" name="q8" value="a"> a) Radio<br>
+                <input type="radio" name="q8" value="b"> b) Phonograph<br>
+                <input type="radio" name="q8" value="c"> c) Kinetoskop<br>
+                <input type="radio" name="q8" value="d"> d) Glühbirne<br>
+                <p class="answer">Antwort: b) Phonograph</p>
+            </div>
+            <button type="submit">Quiz abschicken</button>
+        </form>
+    </div>
+</body>
+</html>
