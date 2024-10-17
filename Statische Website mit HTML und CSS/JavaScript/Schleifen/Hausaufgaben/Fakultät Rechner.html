@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html>
+    <meta name="description" content="Eine Webseite um die Fakultät zu berechen">
+    <meta name="keywords" content="Fakultät">
 <head>
     <title>Masko</title>
     
 </head>
 <body>
+    <dl>
+        <br>
+        <p> Die Fakultät ist in der Mathematik diejenige Funktion, die jeder natürlichen Zahl das Produkt <br>
+            aller positiven natürlichen Zahlen zuordnet, die diese Zahl nicht übertreffen. Sie wird durch ein <br>
+            dem Funktionsargument nachgestelltes Ausrufezeichen („!“) abgekürzt. Ihre Notation mit dem "!" <br>
+            wurde erstmals 1808 von dem elsässischen Mathematiker Christian Kramp (1760–1826)       <br>
+            verwendet, der um 1798 auch die Bezeichnung faculté (französisch „Fähigkeit“) dafür einführte.</p>
+    </dl>
+    <br>
     <h1>Fakultäts Berechnung</h1>
 <ul>
     <label for="number">Gib eine Zahl ein:</label>
     <input type="number" id="number" name="number">
     <button onclick="calculateFactorial()">Berechne</button>
     <p id="erg"></p> <p id="schritte"></p>
+<br>
+<br>
+
+
+
 </ul>   
     
 </body>
 <Footer>
 
-    <p>© 2024 Masko | Github: MarkusKornmann</p>
+    <p>© 2024 Masko | Github: <a href="https://www.github.com/MarkusKornmann" class="link" target="_blank">MarkusKornmann</a></p>   
+
     
 </Footer>
-
+<!-- -->
+<!-- >>>Start CSS<<< -->
+<!-- -->
 <style>
     body {
 font-size: 33px;
@@ -49,14 +68,30 @@ color: rgba(10, 15, 16, 0.866);
 font-weight: bold;
 }
 
+p {
+font-size: 33px;
+font-family: Arial, sans-serif;
+color: rgba(243, 235, 244, 0.866);
+
+}
+
 ul {
 text-align: center;
 
 }
 
+dl {
+    text-align: center;
+    
+}
+
 h1 {
 text-align: center;
 }
+
+.link {
+            color: rgb(198, 186, 205);
+        }
 
 footer {
 background-color: #333;
@@ -68,7 +103,11 @@ width: 100%;
 bottom: 0;
 }
 </style>
+<!-- >>>Ende CSS<<< -->
 
+<!-- -->
+<!-- >>>Start JS<<< -->
+<!-- -->
 <script>
 function factorialFor(n) {
 let erg = 1;
@@ -86,4 +125,5 @@ document.getElementById('erg').innerText = `${n}! = ${erg}`;
 document.getElementById('schritte').innerText = `Lösungsweg: ${schritte}`;
 }
 </script>
+<!-- >>>Ende JS<<< -->
 </html>
