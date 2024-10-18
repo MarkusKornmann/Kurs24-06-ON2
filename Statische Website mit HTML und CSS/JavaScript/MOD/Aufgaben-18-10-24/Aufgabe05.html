@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button-Klick Event</title>
+</head>
+<body>
+  <button id="klick">Klick mich</button>
+  <div id="Erbebnis"></div>
+
+  <script>
+    button = document.getElementById("klick");
+    ergebnisDiv = document.getElementById("Erbebnis");
+
+    button.addEventListener('click', () => {
+      absatz = document.createElement('p');
+      absatz.textContent = 'Button wurde geklickt!';
+      ergebnisDiv.appendChild(absatz);
+    });
+  </script>
+<style>
+
+        body {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #Ergebnis p {
+            text-align: center;
+            margin-top: 10px
+        }
+        button {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 33px;
+        }
+</style>
+
+</body>
+</html>

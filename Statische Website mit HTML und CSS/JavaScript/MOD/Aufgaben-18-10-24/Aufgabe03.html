@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste ändern</title>
+</head>
+<body>
+  <ul id="fruits">
+    <li>Apfel</li>
+    <li>Banane</li>
+    <li>Orange</li>
+  </ul>
+
+  <script>
+    fruitList = document.getElementById("fruits");
+    fruits = fruitList.getElementsByTagName("li");
+    fruits[1].textContent = "Mango";
+  </script>
+
+   <style>
+    li{
+        font-size: 55px;
+        font-family: Arial, Helvetica, sans-serif;
+}
+    </style>
+
+</body>
+</html>

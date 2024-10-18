@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamisches Hinzufügen von Elementen</title>
+</head>
+<body>
+  <div id="DOM1"></div>
+
+  <script>
+ 
+    DOM1 = document.getElementById("DOM1");
+
+    absatz = document.createElement("p");
+
+    absatz.textContent = "Dies ist ein neuer Absatz";
+
+    DOM1.appendChild(absatz);
+
+  </script>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  text-align: center;
+}
+
+</style>
+
+</body>
+</html>

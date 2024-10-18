@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element vor ein bestehendes einfügen</title>
+    </head>
+    <body>
+        <ul id="list">
+            <li>Item 2</li>
+            <li>Item 1</li>
+        </ul>
+    
+        <script>
+          
+            List = document.getElementById("list");
+            Item1 = List.querySelector("li");
+              
+            Item3 = document.createElement("li");
+            Item3.textContent = "Neues Item";
+    
+            List.insertBefore(Item3, Item1);
+        </script>
+    </body>
+    </html>

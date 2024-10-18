@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Farben ändern mit JavaScript</title>
+</head>
+<body>
+   
+  <button id="farbwechselknopf">Ändere Farbe</button>
+
+  <script>
+    farbenwechsel = document.getElementById("farbwechselknopf");
+
+    farbenwechsel.addEventListener("click", () => {
+        farbenwechsel.style.backgroundColor = getRandomColor();
+    });
+
+    function getRandomColor() {
+      Buchstaben = "0123456789ABCDEF"; Farbe = "#";
+      for (i = 0; i < 6; i++) {
+        Farbe += Buchstaben[Math.floor(Math.random() * 16)];
+      }
+      return Farbe;
+    }
+
+  </script>
+
+  <style>
+     body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 33px;
+    }
+  </style>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlerratenspiel</title>
+    </head>
+    <body>
+        <input type="number" id="guessInput" placeholder="Zahl zwischen 1 und 10"> 
+        <button onclick="checkGuess()">Überprüfen</button>
+        <p id="result"></p>
+    
+        <script>
+            function checkGuess() {
+                userGuess = document.getElementById("guessInput").value;
+    
+
+                randomNumber = Math.floor(Math.random() * 10) + 1; 
+    
+                resultElement = document.getElementById("result");
+                if (userGuess == randomNumber) {
+                    resultElement.textContent = "Richtig geraten!";
+                } else {
+                    resultElement.textContent = "Leider falsch. Die Zahl war: " + randomNumber;
+                }
+            }
+        </script>
+        <style>
+            p {
+    
+            font-size: 44px;
+        }
+
+        button {
+            font-size: 44px;
+        }
+        input {
+            font-size: 44px;
+        }
+        </style>
+    </body>
+    </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eingabe auslesen und anzeigen</title>
+    <style>
+        .container {
+            text-align: center;
+            font-size: 44px;
+        }
+
+        button {
+            font-size: 44px;
+        }
+        input {
+            font-size: 44px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="eingabefeld">
+        <button id="absendenButton">Absenden</button>
+        <p id="ausgabe"></p>
+    </div>
+
+    <script>
+        const eingabeFeld = document.getElementById('eingabefeld');
+        const absendenButton = document.getElementById('absendenButton');
+        const ausgabeElement = document.getElementById('ausgabe');
+
+        absendenButton.addEventListener('click', () => {
+            const eingegebenerText = eingabeFeld.value;
+            ausgabeElement.textContent = eingegebenerText;
+        });
+    </script>
+</body>
+</html>
