@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!-- Überschrift mit der ID "ueberschrift" -->
+    <h1 id="ueberschrift">Hello World</h1>
+    <!-- Button mit der ID "meinButton" -->
+    <button id="meinButton">Klick mich</button>
+    
+    <script>
+        // Button-Element mit der ID "meinButton" auswählen
+        let button = document.getElementById("meinButton");
+        // Überschrift-Element mit der ID "ueberschrift" auswählen
+        let ueberschrift = document.getElementById("ueberschrift");
+        // Event-Listener hinzufügen, der eine Nachricht anzeigt, wenn der Button geklickt wird
+        // Get-ExecutionPolicy, Set-ExecutionPolicy RemoteSigned, Set-ExecutionPolicy Restricted
+        button.addEventListener("click", function() {
+            alert("Hallo Welt!");
+        });
+    </script>
+</body>
+</html>
+
+
+
+  
