@@ -3,12 +3,16 @@ div {
   font-family: Arial, sans-serif;
   min-height: 100vh;
   place-items: center;
-  margin: 0;
-  padding: 0;
   background: linear-gradient(180deg, var(--g1), var(--g2));
-  --g2: hsla(193, 65%, 49%, 0.434);
-  --g1: hsla(257, 67%, 53%, 0.683);
+    --g2: hsla(193, 65%, 49%, 0.434);
+    --g1: hsla(257, 67%, 53%, 0.683);
 }
+.botton {
+    font-size: 33px;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: aquamarine;
+  }
 
 .App {
   text-align: center;
