@@ -1,0 +1,28 @@
+.navbar {
+  background-color: blueviolet;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.homebtn {
+  background-color: rgb(82, 82, 171);
+  text-align: center;
+  align-items: center;
+  padding: 10px 20px; 
+  color: #030203;
+  border: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+button {
+  text-align: center;
+  align-items: center;
+  padding: 10px 20px; 
+    background-color: #0e5fb5;
+  color: #030203;
+  border: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}

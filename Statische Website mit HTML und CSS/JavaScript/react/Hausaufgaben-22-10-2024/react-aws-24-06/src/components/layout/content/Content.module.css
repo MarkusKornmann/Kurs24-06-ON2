@@ -1,0 +1,13 @@
+.main-container {
+    background-color: hsla(257, 67%, 53%, 0.683);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    background-color: hsla(193, 43%, 77%, 0.434);
+    display: flex;
+    flex: 1;
+  }
