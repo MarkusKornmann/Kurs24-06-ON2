@@ -6,33 +6,12 @@
   flex-direction: column;
 }
 
-.content {
-  background-color: hsla(193, 43%, 77%, 0.434);
-  display: flex;
-  flex: 1;
-}
-div {
-font-size: 33px;
-font-family: Arial, sans-serif;
-
-
-
-}
 .App-logo {
   height: 10vmin;
-  pointer-events: none;
+  pointer-events: visibleStroke ;
   display: block;
-  margin: 0 auto;
+  margin: 10 auto;
 
 }
 
-footer {
-  text-align: center;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    text-align: center;
-  }
-}
