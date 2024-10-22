@@ -1,6 +1,7 @@
 import './App.css';
 
 function App() {
+    let meinName = "Markus"
     return (
         <div>
             <h1 id="rechnung">Rechnung: {2+2}</h1>

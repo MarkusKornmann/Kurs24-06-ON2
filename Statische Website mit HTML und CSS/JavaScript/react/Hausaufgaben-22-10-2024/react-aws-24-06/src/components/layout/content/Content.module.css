@@ -11,3 +11,9 @@
     display: flex;
     flex: 1;
   }
+  
+  div {
+  background: linear-gradient(380deg, var(--g1), var(--g2));
+  --g2: hsla(193, 65%, 49%, 0.434);
+  --g1: hsla(257, 67%, 53%, 0.683);
+}
