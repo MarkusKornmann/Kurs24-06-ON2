@@ -1,0 +1,17 @@
+.main-container {
+  background-color: hsla(257, 67%, 53%, 0.683);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: visibleStroke ;
+  display: block;
+  margin: 10 auto;
+
+}
+
+

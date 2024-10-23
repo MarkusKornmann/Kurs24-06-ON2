@@ -1,0 +1,27 @@
+.customTextField {
+    display: flex;
+    background-color: hsl(250, 82%, 55%);
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+     margin-bottom: 1rem;
+  }
+  
+  .customTextField label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+   color: rgb(9, 198, 245);
+   
+      }
+  
+  .customTextField input {
+    padding: 0.5rem;
+    height: 20px;
+    width: 150px;
+    text-align: center;
+    background-color: hsl(209, 82%, 58%);
+    border: 2px solid #000000;
+    border-radius: 4px;
+  }
+  

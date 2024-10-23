@@ -1,0 +1,16 @@
+.btnContainer {
+  background-color: rgb(29, 168, 210);
+  height: 40px;
+  cursor: pointer;
+  border: 2px black solid;
+  border-radius: 2px;
+  margin: 4px;
+  &:hover {
+    background-color: rgb(24, 10, 90);
+    color: white;
+    border: 0;
+  }
+}
+
+
+
