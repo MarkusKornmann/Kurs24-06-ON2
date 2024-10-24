@@ -7,6 +7,44 @@ import Navbar from "./components/layout/navbar/Navbar";
 import Content from "./components/layout/content/Content";
 import Footer from "./components/layout/footer/Footer";
 
+function Message({ message }) {
+  return <div>{message}</div>;
+}
+
+function Guestbook() {
+  const [messages, setMessages] = useState([]);
+  const [newMessage, setNewMessage] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();   
+
+    setMessages([...messages, newMessage]);
+    setNewMessage('');
+  };
+
+  return (
+    <div>
+   
+      <h5>Gästebuch</h5>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={newMessage}
+          onChange={(event) => setNewMessage(event.target.value)}
+        />
+        <button type="submit">Senden</button>   
+        
+      </form>
+     
+      <ul>
+        {messages.map((message, index) => (
+          <Message key={index} message={message} />
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export default function App() {
   const [text, setText] = useState('');
 
@@ -20,17 +58,16 @@ export default function App() {
 
       <Navbar />
       <CustomTextField
-        label="Name"
-        placeholder="Enter your name"
+        label="Dein Name:"
+        placeholder="Vorname, Nachname"
         value={text}
         onChange={handleTextChange}
       />
-      <p>Entered Text: {text}</p>
+      <p>{/*>Old> entered Text*/} {text}</p>
       <Content />
       <StandardBtn>Masko 2024</StandardBtn>
       <Footer />
+      <Guestbook />
     </div>
   );
 }
-
-

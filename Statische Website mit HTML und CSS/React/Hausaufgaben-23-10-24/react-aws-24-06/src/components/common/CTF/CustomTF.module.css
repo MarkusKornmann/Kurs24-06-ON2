@@ -18,9 +18,9 @@
   .customTextField input {
     padding: 0.5rem;
     height: 20px;
-    width: 150px;
+    width: 250px;
     text-align: center;
-    background-color: hsl(209, 82%, 58%);
+    background-color: hsl(208, 19%, 85%);
     border: 2px solid #000000;
     border-radius: 4px;
   }

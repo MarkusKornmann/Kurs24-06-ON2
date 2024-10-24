@@ -3,27 +3,30 @@ import StandardBtn from "../../common/standard-btn/StandardBtn";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
-  function onClickHello() {
-    alert("Hello");
+  function onClickHome() {
+    alert("Home");
   }
 
-  function onClickHi() {
-    alert("Hi");
+  function onClickZurück() {
+    alert("Zurück");
   }
+
+  function onClickKontakt() {
+    alert("Kontakt");
+  }
+
+  function onClickWarenkorb() {
+    alert("Warenkorb");
+  }
+
 
   return (
-  /*  <div className={styles.navbar}>
-      <StandardBtn name="Home" />
-      <StandardBtn name="Zurück" />
-      <StandardBtn name="Kontakt" />
-      <StandardBtn name="Warenkorb" />
-    
-      </div> */
+
       <div className={styles.navbar}>
-      <StandardBtn myOnClick={onClickHello}>{"Home"}</StandardBtn>
-      <StandardBtn myOnClick={onClickHi}>{"zurück"}</StandardBtn>
-      <StandardBtn myOnClick={onClickHello}>{"Kontakt"}</StandardBtn>
-      <StandardBtn myOnClick={onClickHi}>{"Warenkorb"}</StandardBtn>
+      <StandardBtn myOnClick={onClickHome}>{"Home"}</StandardBtn>
+      <StandardBtn myOnClick={onClickZurück}>{"Zurück"}</StandardBtn>
+      <StandardBtn myOnClick={onClickKontakt}>{"Kontakt"}</StandardBtn>
+      <StandardBtn myOnClick={onClickWarenkorb}>{"Warenkorb"}</StandardBtn>
       </div>
   );
 }
