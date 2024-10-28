@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./Bild";
 import "./App.css";
 import Navbar from "./components/layout/navbar/Navbar";
 import Content from "./components/layout/content/Content";

@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 function Footer() {
   return (
      <div className={styles.footer}>
-      {/*Masko 2024*/} 
+      Gruppe 1 
        <footer>
         <a href="/impressum">Impressum</a> | <a href="/ueber-uns">Über uns</a>
       </footer> 
