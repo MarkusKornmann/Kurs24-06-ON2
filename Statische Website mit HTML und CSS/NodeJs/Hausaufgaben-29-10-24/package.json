@@ -6,7 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "start": "node index.js",
-    "prepare": "husky"
+    "prepare": "husky",
+    "husky": "^9.1.6",
+    "pre-commit": "eslint ."
   },
   "keywords": [],
   "author": "",
