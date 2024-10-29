@@ -1,3 +1,4 @@
 Nachricht 1
 Nachricht 2
 Nachricht 3
+heute ist ein neuer Tag
