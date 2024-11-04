@@ -1,0 +1,26 @@
+[
+  {
+    "userId": 1,
+    "id": 1730731404317,
+    "title": "Milch kaufen",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 1730731417118,
+    "title": "Kaffee kaufen",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 1730731547963,
+    "title": "Hausaufgaben",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 1730731580506,
+    "title": "Einkaufen gehen",
+    "completed": false
+  }
+]
